@@ -185,33 +185,35 @@
     <p>If you would like to discuss a project or need technical support, feel free to reach out.</p>
 
     <form action="https://formsubmit.co/florian.zela.office@gmail.com" method="POST">
-  
-  <!-- Optional settings -->
-  <input type="hidden" name="_subject" value="New contact from website">
+
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_subject" value="New contact from infracoretech.github.io">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+  <input type="hidden" name="_next" value="https://infracoretech.github.io/thank-you.html">
 
   <div class="fields">
     <div class="field">
-      <label>Name</label>
-      <input type="text" name="name" required />
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
     </div>
 
     <div class="field">
-      <label>Email</label>
-      <input type="email" name="email" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
     </div>
 
     <div class="field">
-      <label>Message</label>
-      <textarea name="message" rows="4" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
     </div>
   </div>
 
   <ul class="actions">
     <li><input type="submit" value="Send Message" /></li>
   </ul>
+
 </form>
+
 
     <ul class="contact">
       <li class="icon solid fa-envelope">
@@ -239,3 +241,4 @@
 
 </body>
 </html>
+
