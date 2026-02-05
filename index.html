@@ -215,14 +215,24 @@
 </form>
 
     <ul class="contact">
-      <li class="icon solid fa-envelope">
-  <a href="mailto:florian.zela.office@gmail.com">
-    florian.zela.office@gmail.com
-  </a>
-  <br>
-  <small>
-    Mobile users: opens your email app
-  </small>
+      <a href="#" id="emailLink">florian.zela.office@gmail.com</a>
+
+<script>
+document.getElementById("emailLink").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = "mailto:florian.zela.office@gmail.com";
+  } else {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=florian.zela.office@gmail.com",
+      "_blank"
+    );
+  }
+});
+</script>
 </li>
       <li class="icon brands fa-linkedin">
         <a href="https://www.linkedin.com/in/florian-zela-530422234/" target="_blank">LinkedIn</a>
@@ -246,6 +256,7 @@
 
 </body>
 </html>
+
 
 
 
